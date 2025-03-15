@@ -16,7 +16,7 @@
     name: grafana
     state: present
     update_cache: yes
-
+ 
 - name: Configure Grafana
   template:
     src: grafana.ini.j2
@@ -28,3 +28,5 @@
     name: grafana-server
     enabled: yes
     state: started
+
+###run this
